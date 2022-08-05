@@ -1,10 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText as text
 smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
-# smtpserver.ehlo()
 smtpserver.starttls()
-# smtpserver.ehlo()
-
 
 emailfetch = open("emailid.txt", 'r')
 getidpass = (emailfetch.readline()).split('#')
